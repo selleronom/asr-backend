@@ -1,6 +1,6 @@
 commands:
 - exec:
-    commandLine: pip install -r requirements.txt
+    commandLine: apt-get update && apt-get install -y ffmpeg && pip install -r requirements.txt
     component: py
     group:
       isDefault: true
@@ -8,7 +8,7 @@ commands:
     workingDir: ${PROJECT_SOURCE}
   id: pip-install-requirements
 - exec:
-    commandLine: alembic -c alembic/alembic.ini upgrade head && python uvicorn app.main:app --host 0.0.0.0 --port 8000
+    commandLine: alembic -c alembic/alembic.ini upgrade head; uvicorn app.main:app --host 0.0.0.0 --port 8000
     component: py
     group:
       isDefault: true

@@ -4,9 +4,9 @@ torchaudio
 transformers
 pydub
 spylls
-databases
 asyncpg
 psycopg2-binary
 sqlalchemy
 alembic
+uvicorn
 fastapi-users[sqlalchemy,oauth]
