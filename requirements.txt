@@ -1,0 +1,12 @@
+fastapi[all]
+torch
+torchaudio
+transformers
+pydub
+spylls
+databases
+asyncpg
+psycopg2-binary
+sqlalchemy
+alembic
+fastapi-users[sqlalchemy,oauth]
